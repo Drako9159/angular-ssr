@@ -1,0 +1,3 @@
+ng new --ssr
+ng g component src/components/asyncComponent
+ng g service src/service/endpointSimulation
