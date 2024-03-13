@@ -1,4 +1,4 @@
-import { CommonModule, JsonPipe } from '@angular/common';
+import { AsyncPipe, CommonModule, JsonPipe } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { Observable } from 'rxjs';
 import { EndpointSimulationService } from '../../service/endpoint-simulation.service';
@@ -6,7 +6,7 @@ import { EndpointSimulationService } from '../../service/endpoint-simulation.ser
 @Component({
   selector: 'app-async',
   standalone: true,
-  imports: [CommonModule, JsonPipe],
+  imports: [CommonModule, JsonPipe, AsyncPipe],
   templateUrl: './async.component.html',
   styleUrl: './async.component.css',
 })

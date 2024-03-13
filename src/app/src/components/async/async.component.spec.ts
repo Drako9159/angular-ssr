@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AsyncComponent } from './async.component';
+import { EndpointSimulationService } from '../../service/endpoint-simulation.service';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('AsyncComponent', () => {
   let component: AsyncComponent;
@@ -8,7 +10,8 @@ describe('AsyncComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AsyncComponent]
+      imports: [AsyncComponent, HttpClientModule],
+      providers: [EndpointSimulationService]
     })
     .compileComponents();
     
