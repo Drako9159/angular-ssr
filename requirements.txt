@@ -1,3 +1,8 @@
 ng new --ssr
 ng g component src/components/asyncComponent
 ng g service src/service/endpointSimulation
+
+npm install jest --save-dev
+npm install jest-environment-jsdom --save-dev
+
+ng test
